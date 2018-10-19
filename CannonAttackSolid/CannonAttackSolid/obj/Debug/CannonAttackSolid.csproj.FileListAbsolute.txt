@@ -1,0 +1,7 @@
+C:\VC_Projects\Om&Design\practical03\CannonAttackSolid\CannonAttackSolid\obj\Debug\CannonAttackSolid.csprojAssemblyReference.cache
+C:\VC_Projects\Om&Design\practical03\CannonAttackSolid\CannonAttackSolid\obj\Debug\CannonAttackSolid.csproj.CoreCompileInputs.cache
+C:\VC_Projects\Om&Design\practical03\CannonAttackSolid\CannonAttackSolid\bin\Debug\CannonAttackSolid.exe.config
+C:\VC_Projects\Om&Design\practical03\CannonAttackSolid\CannonAttackSolid\bin\Debug\CannonAttackSolid.exe
+C:\VC_Projects\Om&Design\practical03\CannonAttackSolid\CannonAttackSolid\bin\Debug\CannonAttackSolid.pdb
+C:\VC_Projects\Om&Design\practical03\CannonAttackSolid\CannonAttackSolid\obj\Debug\CannonAttackSolid.exe
+C:\VC_Projects\Om&Design\practical03\CannonAttackSolid\CannonAttackSolid\obj\Debug\CannonAttackSolid.pdb
