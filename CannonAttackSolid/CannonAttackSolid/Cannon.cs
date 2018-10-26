@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,8 +32,7 @@ namespace CannonAttackSolid
                 CannonID = value;
             }
         }
-        public int DistanceOfTarget { get => DistanceOfTarget1; set => DistanceOfTarget1 = value; }
-        public int DistanceOfTarget1 { get; set; }
+        public int DistanceOfTarget { get; set; }
 
         protected Cannon cannonSingletonInstance;
         protected readonly object padlock = new object();
