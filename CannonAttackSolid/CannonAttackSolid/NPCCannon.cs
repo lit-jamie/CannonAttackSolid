@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,36 +6,36 @@ using System.Threading.Tasks;
 
 namespace CannonAttackSolid
 {
-    public class NPCCannon : Cannon
+    public class NPCCannon : Cannon, ICalculateParameters
     {
-        protected int[] strikePatterns = new int[2];
-        public enum TargetStrike { Miss, DirectHit, StandingBy};
-        public enum TargetSights { IceCold, Cold, Warm, Hot };
-        protected TargetSights targetingStatus;
-        protected TargetStrike strikeStatus;
+        
+        
 
         public NPCCannon() : base()
         {
-            strikePatterns[0] = 0;
-            strikePatterns[1] = 0;
+            SetParams();
             //targetingStatusStandingBy;
         }
-
+        
         public override Cannon GetInstance()
         {
             lock (base.padlock)
             {
                 if (cannonSingletonInstance == null)
                 {
-                    base.cannonSingletonInstance = new PlayerCannon();
+                    base.cannonSingletonInstance = new NPCCannon();
                 }
                 return cannonSingletonInstance;
             }
         }
 
-        public virtual void ProcessTurn()
+        public void SetParams()
         {
-
+            Random r = new Random();
+            this.Position = r.Next(1000);
+            this.SetTarget(2000 - this.Position);
         }
+
+        
     }
 }
